@@ -100,7 +100,11 @@ class Mail
 	}
 	public function getBody()
 	{
-
+		return $this->render("body");
+	}
+	public function getSubject()
+	{
+		return $this->render("subject");
 	}
 	private function setStatus($status)
 	{
