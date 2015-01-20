@@ -116,11 +116,11 @@ class Mail
 	}
 	private function render($typ = "body")
 	{
-		$loader = new Twig_Loader_Array(array(
+		$loader = new \Twig_Loader_Array(array(
 		    'body' => $this->body,
 		    'subject' => $this->subject
 		));
-		$twig = new Twig_Environment($loader);
+		$twig = new \Twig_Environment($loader);
 		return $twig->render($typ, $this->params);
 	}
 	public function send()
