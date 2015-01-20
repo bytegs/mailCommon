@@ -1,0 +1,15 @@
+{
+    "name": "bytegs/mailcommon",
+    "type": "library",
+    "require": {
+        "php": ">=5.3.3",
+        "easylib/pdow": "1.2.2",
+        "twig/twig": "1.17.0"
+        
+    },
+    "autoload": {
+        "psr-0": {
+            "Byte\\Mailer\\": ""
+        }
+    }
+}
