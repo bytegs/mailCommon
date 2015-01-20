@@ -3,7 +3,7 @@ namespace Byte\Mailer;
 
 class Mail
 {
-	public function __construct($id == NULL)
+	public function __construct($id = NULL)
 	{
 		$this->db = new \Easy\PDOW\PDOW();
 		if($id!==NULL)
