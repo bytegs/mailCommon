@@ -128,6 +128,10 @@ class Mail
 		$this->checkDB();
 		$sql = "INSERT INTO `mails`(`templateID`, `varieables`, `to`, `status`) VALUES (?, ?, ?, ?)";
 		$this->id = $this->db->insertID($sql, array($this->templateID, json_encode($this->params), $this->to, "waiting"));
-		return $id;
+		return $this->id;
+	}
+	public function getID()
+	{
+		return $this->id;
 	}
 }
