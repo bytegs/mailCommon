@@ -23,7 +23,7 @@ class Mail
 			$this->id = $id;
 		}
 	}
-	public function setDB()
+	public function setDB($db)
 	{
 		$this->db = $db;
 	}
